@@ -16,9 +16,12 @@ class PalovPage extends StatelessWidget {
         title: Text('Palov'),
       ),
       body: Container(
-        child:Column(children: [
-          Image.asset('images/Palov.png')
-        ],)
+        child:SingleChildScrollView(
+          child: Column(children: [
+            Image.asset('images/Palov.png'),
+            Text('Uzbek cuisine shares the culinary traditions of peoples across Central Asia.[1] There is a great deal of grain farming in Uzbekistan, so breads and noodles are of importance, and Uzbek cuisine has been characterized as "noodle-rich".[2] Mutton is a popular variety of meat due to the abundance of sheep in the country and it is a part of various Uzbek dishes.')
+          ],),
+        )
       ),
     );
   }

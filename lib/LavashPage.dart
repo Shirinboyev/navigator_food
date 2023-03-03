@@ -16,9 +16,12 @@ class LavashPage extends StatelessWidget {
         title: Text('Lavash'),
       ),
       body: Container(
-        child:Column(children: [
-          Image.asset('images/Lavash.png',scale: 1.6,)
-        ],)
+        child:SingleChildScrollView(
+          child: Column(children: [
+            Image.asset('images/Lavash.png',scale: 1.6,),
+            Text('Lavash is made with flour, water, yeast, sugar and salt. It can also be made in an unleavened version by omitting sugar and yeast.[28] Toasted sesame seeds and/or poppy seeds are sometimes sprinkled on before baking. Traditionally the dough is rolled out flat and slapped against the hot walls of a clay oven, but modern recipes may adapt for cooking on a wok or tava.')
+          ],),
+        )
       ),
     );
   }

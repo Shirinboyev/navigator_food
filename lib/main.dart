@@ -2,14 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:navigator_food/FriePage.dart';
 import 'package:navigator_food/LavashPage.dart';
 import 'package:navigator_food/PalovPage.dart';
-import 'package:navigator_food/barakPage.dart';
 import 'package:navigator_food/chickenPage.dart';
-import 'package:navigator_food/PerashkiPage.dart';
 import 'package:navigator_food/RicePage.dart';
 import 'package:navigator_food/SomsaPage.dart';
 import 'package:navigator_food/PizzaPage.dart';
 // import 'package:navigator_food/pizzaPage.dart';
-import'package:like_button/like_button.dart';
 void main(){                                         
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
@@ -204,50 +201,7 @@ class _HomePageState extends State<HomePage> {
                });
                }, icon: Icon(Icons.favorite_outline,color: Colors.red,)),
     ),
-    ListTile(
-           onTap: () {
-            setState(() {
-            Navigator.of(context).push(MaterialPageRoute(builder:(context)=> BarakPage()));
-            });
-           },
-          leading: CircleAvatar(backgroundImage: AssetImage('images/baraak.png')),
-          title: Text('Barak', style: TextStyle(
-         fontSize: 18,
-         fontWeight: FontWeight.w600,
-               ),),
-               subtitle: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                 children: [
-                 Icon(Icons.access_time,
-                 size: 20,
-                 color: Colors.grey[300],
-                 ),
-                 Text('15 min',
-                 style: TextStyle(color: Colors.grey[400],),
-                 ),
-                  Icon(Icons.star,
-                  size: 20,
-                  color: Colors.yellow[700],
-                  ),
-                  Text('5.0',
-                  style: TextStyle(
-                   color: Colors.yellow[700],
-                  ),
-                  ),
-                  Icon(Icons.local_fire_department,
-                  size: 20,
-                  color: Colors.red[300],
-                  ),
-                  Text('550',
-                  style: TextStyle(
-                   color: Colors.red[300],
-                  ),
-                  )
-               ],),
-               trailing: IconButton(onPressed: (){
-               setState(() {
-               });
-               }, icon: Icon(Icons.favorite_outline,color: Colors.red,)),
-    ),    ListTile(
+  ListTile(
            onTap: () {
             setState(() {
             Navigator.of(context).push(MaterialPageRoute(builder:(context)=> RicePage()));
@@ -334,49 +288,6 @@ class _HomePageState extends State<HomePage> {
                });
                }, icon: Icon(Icons.favorite_outline,color: Colors.red,)),
     ), ListTile(
-           onTap: () {
-            setState(() {
-            Navigator.of(context).push(MaterialPageRoute(builder:(context)=> PerashkiPage()));
-            });
-           },
-          leading: CircleAvatar(backgroundImage: AssetImage('images/perashki.png')),
-          title: Text('Perashki', style: TextStyle(
-         fontSize: 18,
-         fontWeight: FontWeight.w600,
-               ),),
-               subtitle: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                 children: [
-                 Icon(Icons.access_time,
-                 size: 20,
-                 color: Colors.grey[300],
-                 ),
-                 Text('25 min',
-                 style: TextStyle(color: Colors.grey[400],),
-                 ),
-                  Icon(Icons.star,
-                  size: 20,
-                  color: Colors.yellow[700],
-                  ),
-                  Text('5.0',
-                  style: TextStyle(
-                   color: Colors.yellow[700],
-                  ),
-                  ),
-                  Icon(Icons.local_fire_department,
-                  size: 20,
-                  color: Colors.red[300],
-                  ),
-                  Text('350',
-                  style: TextStyle(
-                   color: Colors.red[300],
-                  ),
-                  )
-               ],),
-               trailing: IconButton(onPressed: (){
-               setState(() {
-               });
-               }, icon: Icon(Icons.favorite_outline,color: Colors.red,)),
-    ),ListTile(
            onTap: () {
             setState(() {
             Navigator.of(context).push(MaterialPageRoute(builder:(context)=> PizzaPage()));
